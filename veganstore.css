@@ -1,0 +1,566 @@
+body{
+    font-family:poppins,sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+      background-color: white;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 77px;
+      display: flex;
+      float:right;
+      align-items: center;
+      padding: 0 28px;
+      box-sizing: border-box;
+      position: fixed;
+      z-index:10;
+  }
+  
+  .menu-items{
+      color: black;
+      font-weight: 600;
+      font-size: 14px;
+      margin-right: 24px;
+      cursor: pointer;
+      text-decoration:none;
+  }
+  .menu-items i{
+    padding-left: 4px;
+  }
+  
+  #logo{
+    width:40px;
+  }
+  .nav-cont{
+    display:flex;
+    margin-left:auto;
+  }
+  .button{
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      background-color: rgb(170, 210, 54);
+      padding: 9px 34px;
+      text-transform: uppercase;
+      border: 0;
+      border-radius: 4px;
+      margin-right: 16px;
+      cursor: pointer;
+  }
+  
+  #landing-section {
+    Width: 100%;
+    Height:100vh;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    background-position: left;
+    background-size: cover;
+  }
+  
+  #main-wrapper{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #main-wrapper h1{
+      width: 100%;
+      max-width: 1100px;
+      font-size: 44px;
+      font-weight: 600;
+      letter-spacing: 8.8px;
+      line-height: 1.2;
+      text-align: center;
+      margin: 0;
+  }
+  
+  #main-wrapper p{
+      width: 100%;
+      max-width: 1100px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      color: #8b8b99;
+      text-align: center;
+      padding-top: 32px;
+  }
+  
+  #steps-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  
+  .step-item {
+      width: 25%;
+      padding: 112px 48px;
+      text-align: center;
+      color: white;
+      box-sizing: border-box;
+  }
+  
+  .step-item i {
+      font-size: 96px;
+      transition: all 0.3s;
+  }
+  
+  .step-item h3 {
+      font-weight: 600;
+      font-size: 24px;
+  }
+  
+  .step-item p {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      color:white;
+      line-height: 1.6;
+      margin-top: 0;
+  }
+  
+  #first-step {
+      background-color: #5acda6;
+  }
+  #second-step {
+      background-color: #91ac41;
+  }
+  #third-step {
+      background-color: #e4b476;
+  }
+  #fourth-step {
+      background-color: #f69dad;
+  }
+  
+  .dropdown-wrapper{
+    display:inline-block;
+    position:relative;
+    margin-left:400px;
+  }
+  .menu-item i {
+      padding-left: 4px;
+  }
+  .fa, .fas {
+      font-weight: 900;
+      transition:all 0.6s;
+  }
+  .fas {
+      font-family: "Font Awesome 5 Free";
+  }
+  
+  .fa:hover{
+    transform:scale(1.1, 1.1);
+  }
+  
+  .fa-smile:hover{
+      transform:scale(1.1, 1.1);
+  }
+  
+  .dropdown {
+      width: 150px;
+      border-top: 2px solid rgb(170, 210, 54);
+      padding: 20px;
+      position: absolute;
+      right:26px;
+      background-color: white;
+      box-shadow: 0 2px 5px #ccc;
+      display: none;
+  }
+  
+  .dropdown a{
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #ccc;
+      padding: 4px;
+      cursor: pointer;
+      font-weight:400;
+  }
+  
+  #jk1{
+    margin-top:3px;
+    font-size: 14px;
+  }
+  
+  .dropdown a:last-of-type{
+      border: none;
+  }
+  
+  .dropdown-wrapper:hover .dropdown{
+      display: block;
+  }
+  .dropdown:hover{
+      display: block;
+  }
+  
+  #store-section{
+    width:100%;
+    background-color:rgb(247,238,226);
+    padding-top:75px;
+    padding-bottom:75px;
+    vertical-align:center;
+    text-align:center;
+  }
+  
+  .food{
+    font-size:24px;
+    color:#91ac41;
+    font-style:italic;
+    font-weight:200;
+    font-family:'Caveat', cursive;
+    margin:0;
+    margin-top:35px;
+  }
+  
+  .vs{
+    font-size:44px;
+    font-weight:600;
+    margin:0;
+    margin-bottom:8px;
+  }
+  
+  .para{
+    color: #8b8b99;
+    font-size:16px;
+    font-weight:500;
+    margin-bottom:55px;
+  }
+  
+  #pictures{
+    width:100%;
+    max-width:1140px;
+    display:flex;
+    justify-content:stretch;
+    margin-left:100px;
+  }
+  
+  .icons{
+    width:25%;
+    padding:24px;
+  }
+  .items{
+    display:inline-block;
+    background-color: #e3b375;
+    border-radius:50%;
+    padding:40px;
+    color:white;
+    transition:all 0.3s;
+  }
+  
+  .items:hover{
+    transform:scale(1.2);
+  }
+  
+  .items i{
+    font-size:60px;
+  }
+  
+  .icons h3{
+    font-size:24px;
+    font-weight:600;
+  }
+  
+  .icons p{
+    font-size:16px;
+    color:#8b8b99;
+    font-weight:500;
+  }
+  
+  #quality-section{
+    text-align:center;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+  
+  }
+  
+  
+  .people-items:hover {
+      box-shadow: 0 12px 16px 0 rgba(39,39,47,0.06);
+  }
+  
+  
+  
+  #people{
+    width:100%;
+    max-width:1140px;
+    display:flex;
+    justify-content:stretch;
+    margin:0 auto;
+  }
+  
+  .people-items{
+      width: 25%;
+      text-align: center;
+      background-color: #f5f6fb;
+      padding: 40px 30px;
+      margin: 16px;
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 45px;
+      border-bottom-right-radius: 45px;
+      transition: box-shadow 0.3s;
+  }
+  .message{
+    font-size: 14px;
+    color:#8b8b99;
+    letter-spacing:0.5px;
+    font-style: italic;
+    margin:0;
+  }
+  
+  .girl{
+    width:80px;
+    margin-bottom:25px;
+    border-radius: 50%;
+  }
+  
+  .people-items h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  
+  .c{
+      color: #8b8b99;
+      font-size: 12px;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      margin: 0;
+  }
+  
+  #left{
+   text-align:center;
+   display:flex;
+   justify-content:stretch;
+  }
+  
+  #strawberry{
+    width:100%;
+    display:inline-block;
+    margin:0;
+  }
+  #strawberry img{
+    width:100%;
+  }
+  #right{
+    width:33.33%;
+    margin:0;
+    display:inline-block;
+    background-image:url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    background-position:left;
+    background-position-y:center;
+    background-size:cover;
+  }
+  
+  #right #txt{
+    margin:115px;
+  }
+  
+  #right #txt h3{
+    font-size:44px;
+    font-weight:600;
+    margin:0 0 8px;
+  }
+  
+  #right #txt p{
+    font-size:16px;
+    color: #8b8b99;
+    line-height:1.6;
+    margin:0;
+  }
+  #email-btn{
+      width: 100%;
+      box-sizing: border-box;
+      border: 0;
+      border-radius: 4px;
+      font-weight: 500;
+      background-color: white;
+      padding: 12px;
+      color: #8b8b99;
+      font-size: 16px;
+      margin-top: 60px;
+      display: block;
+  }
+  input{
+    outline:none;
+    font-family:'poppins',sans-serif;
+  }
+  
+  #sub-btn{
+      background-color: #f69dad;
+      padding: 16px 42px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+      border: 0;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 16px;
+  }
+  #sub-btn:hover{
+    color: #f69dad;
+    border: 1px solid #f69dad;
+    background-color: transparent;
+  }
+  
+  #count-section{
+    width:100%;
+    background-color:#f6fcfa;
+  }
+  #ct{
+      width: 100%;
+      max-width: 1140px;
+      padding: 100px 0;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: stretch;
+  }
+  
+  .like{
+    width: 25%;
+    padding: 0 64px;
+  }
+  
+  .like h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .like p{
+      color: #57e3b5;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      font-style: italic;
+      margin: 0;
+  }
+  #video-section > div{
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+  #video-section h3{
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+  }
+  
+  #seperator-lines{
+      width: 96px;
+      display: inline-block;
+      height: 1px;
+      background-color: #e4b476;
+      margin-bottom: 36px;
+  }
+  
+  #video-section iframe{
+    width: 100%;
+    height: 425px;
+  }
+  #address-section{
+    margin-left:80px;
+  }
+  
+  #address-wrapper{
+      width: 100%;
+      max-width: 1140px;
+      margin:auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 0;
+  }
+  
+  #address-wrapper > div {
+      width: 100%;
+  }
+  
+  #address-wrapper > div:last-of-type {
+      width: 100%;
+  }
+  
+  .green-heading {
+      color: #91ac41;
+      font-size: 24px;
+      font-family: 'Caveat', cursive;
+      margin: 0;
+      margin-top: 35px;
+  }
+  
+  .section-heading {
+      font-size: 600;
+      font-size: 44px;
+      margin: 0;
+  }
+  
+  .section-description {
+      font-size: 16px;
+      font-weight: 400;
+      color: #8b8b99;
+      letter-spacing: 0.5px;
+  }
+  
+  
+  .address-heading {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+      margin-top: 32px;
+  }
+  .address-lines {
+      font-size: 16px;
+      font-weight: 400;
+      color: #8b8b99;
+      letter-spacing: 0.5px;
+      line-height: 2;
+      margin: 0;
+  }
+  
+  .input-box {
+      width: calc(100% - 32px);
+      padding: 16px;
+      font-size: 16px;
+      color: #8b8b99;
+      border-radius: 6px;
+      border: 1px solid #e5e6ec;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+  }
+  
+  #btn-submit {
+      font-size: 16px;
+  }
+  
+  .primary-button {
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      background-color: rgb(170, 210, 54);
+      padding: 9px 34px;
+      text-transform: uppercase;
+      border: 0;
+      border-radius: 4px;
+      margin-right: 16px;
+      cursor: pointer;
+  }
+  
+  footer {
+      background-color: #232323;
+      color: white;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      padding: 30px 0px;
+  }
+  
+  
+  
